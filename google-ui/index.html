@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google-Clone</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./src/output.css" />
+    <!-- favicon img -->
+    <link
+      rel="shortcut icon"
+      href="./images/google-icon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <!-- main tag -->
+    <main>
+      <!-- header tag -->
+      <header class="h-4 border-0">
+        <div class="m-4">
+          <ul class="flex gap-5 text-sm absolute end-8">
+            <li class="hover:underline"><a href="#">Gmail</a></li>
+            <li class="hover:underline"><a href="#">Images</a></li>
+            <li>
+              <img src="./images/lab.svg" alt="lab image" />
+            </li>
+            <li>
+              <img src="./images/apps.svg" alt="apps image" />
+            </li>
+            <li><img src="./images/account.svg" alt="account image" /></li>
+          </ul>
+        </div>
+      </header>
+      <!-- section tag -->
+      <section>
+        <div class="flex justify-center m-6">
+          <!-- <h1 class="text-8xl">
+            <ul class="flex font-semibold">
+              <li class="text-blue-600">G</li>
+              <li class="text-red-600">o</li>
+              <li class="text-yellow-400">o</li>
+              <li class="text-blue-600">g</li>
+              <li class="text-green-600">l</li>
+              <li class="text-red-600">e</li>
+            </ul>
+          </h1> -->
+          <img
+            src="./images/google-logo.png"
+            alt="google logo image"
+            class="w-[272px] h-[92px]"
+          />
+        </div>
+        <div class="flex justify-center p-5 relative">
+          <img
+            src="./images/search.svg"
+            alt="search image"
+            class="absolute left-99 top-8"
+          />
+          <input
+            type="search"
+            autofocus
+            class="border-1 border-gray-400 p-3 pl-12 rounded-3xl hover:shadow-2xl outline-none w-150"
+          />
+          <img
+            src="./images/mic.svg"
+            alt="mic image"
+            class="absolute right-110 top-8"
+          />
+          <img
+            src="./images/camera.svg"
+            alt="camera image"
+            class="absolute right-100 top-8"
+          />
+        </div>
+        <div class="gap-3 flex justify-center items-center m-2">
+          <div>
+            <button
+              class="bg-gray-100 p-2 rounded hover:border border-gray-300 cursor-pointer"
+            >
+              Google Search
+            </button>
+          </div>
+          <div>
+            <button
+              class="bg-gray-100 p-2 rounded hover:border border-gray-300 cursor-pointer"
+            >
+              I'm Feeling Lucky
+            </button>
+          </div>
+        </div>
+        <div class="m-10">
+          <div class="flex items-center justify-center text-sm">
+            <p>Google Offered in: &nbsp;</p>
+            <p class="text-blue-800 hover:underline">English</p>
+          </div>
+        </div>
+      </section>
+      <!-- footer tag -->
+      <footer class="absolute bottom-0">
+        <div class="bg-gray-100 w-screen text-sm">
+          <div class="p-3 pl-10">
+            <h1>Pakistan</h1>
+          </div>
+          <hr class="text-gray-300" />
+          <div class="p-3 pl-10 pr-10 flex justify-between">
+            <ul class="flex gap-10">
+              <li>About</li>
+              <li>Advertising</li>
+              <li>Business</li>
+              <li>How Search Works</li>
+            </ul>
+            <ul class="flex gap-10">
+              <li>Privacy</li>
+              <li>Terms</li>
+              <li>Settings</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
