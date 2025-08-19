@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@layer components {
+    .btn {
+        @apply bg-gray-200 rounded px-3 py-1 text-sm hover:bg-gray-300 cursor-pointer;
+    }
+
+    .side_menu {
+        @apply flex justify-center items-center flex-col hover:bg-gray-300 p-3 rounded
+    }
+
+    .video_img {
+        @apply rounded-2xl w-95 object-cover
+    }
+
+    .shorts {
+        @apply rounded-2xl w-54 h-100 object-cover
+    }
+}

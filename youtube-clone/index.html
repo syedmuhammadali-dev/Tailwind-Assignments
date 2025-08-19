@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube-clone</title>
+
+    <!-- fav icon  -->
+
+    <link
+      rel="shortcut icon"
+      href="./images/youtube-icon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- tailwind css link -->
+
+    <link rel="stylesheet" href="./src/output.css" />
+
+    <!-- custom css -->
+
+    <style>
+      img {
+        cursor: pointer;
+      }
+    </style>
+
+    <!-- custom ends -->
+  </head>
+  <body>
+    <!-- main div starts -->
+
+    <main class="container max-w-480 mx-auto">
+      <!-- header starts -->
+
+      <header class="fixed top-0 left-0 w-full bg-white z-50 shadow">
+        <!-- 1st header starts -->
+
+        <section class="m-4 flex">
+          <div
+            class="hidden sm:flex justify-center items-center size-10 hover:bg-gray-300 rounded-3xl ml-1"
+          >
+            <img
+              src="./images/menu-line.svg"
+              alt="nav menu image"
+              class="size-7"
+            />
+          </div>
+
+          <div class="hidden sm:block w-26 sm:ml-5 sm:mr-5">
+            <img
+              src="./images/youtube-logo.png"
+              alt="youtube logo"
+              class="w-24 h-5 mt-1"
+            />
+          </div>
+
+          <div class="sm:hidden">
+            <img
+              src="./images/youtube-mobile-logo.png"
+              alt="youtube logo"
+              class="w-15 h-10"
+            />
+          </div>
+
+          <div class="relative flex mx-auto w-full max-w-xl px-4">
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Search"
+              class="w-full border border-gray-300 rounded-3xl p-2 pl-7 pr-12"
+            />
+
+            <div>
+              <div
+                class="absolute inset-y-0 right-8 border-l-2 border-gray-200 flex items-center hover:bg-gray-300 rounded-3xl"
+              >
+                <img
+                  src="./images/search.svg"
+                  alt="search icon"
+                  class="size-6 text-gray-500"
+                />
+              </div>
+
+              <div
+                class="hidden lg:flex size-10 rounded-full hover:bg-gray-300 bg-gray-100 justify-center items-center absolute inset-y-0 right-[-40px]"
+              >
+                <img src="./images/mic.svg" alt="mic icon" class="size-7" />
+              </div>
+            </div>
+          </div>
+
+          <div class="flex sm:gap-4">
+            <div
+              class="size-23 h-10 rounded-full hover:bg-gray-300 bg-gray-100 hidden sm:flex justify-center items-center"
+            >
+              <img src="./images/plus.svg" alt="plus icon" class="size-7" />
+              <p class="sm:block hidden">Create</p>
+            </div>
+
+            <div
+              class="sm:hidden size-10 rounded-full hover:bg-gray-300 bg-gray-100 flex justify-center items-center"
+            >
+              <img src="./images/plus.svg" alt="plus icon" class="size-7" />
+            </div>
+
+            <div
+              class="size-10 rounded-full hover:bg-gray-300 bg-gray-100 flex justify-center items-center"
+            >
+              <img
+                src="./images/notification.svg"
+                alt="notification icon"
+                class="size-7"
+              />
+            </div>
+
+            <div
+              class="size-10 rounded-full hover:bg-gray-300 bg-gray-100 flex justify-center items-center"
+            >
+              <img
+                src="./images/profile.svg"
+                alt="profile icon"
+                class="size-7"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- 1st header ends -->
+
+        <!-- btn header starts -->
+
+        <section
+          class="overflow-auto flex justify-center items-center gap-3 mb-5"
+        >
+          <button class="btn">All</button>
+          <button class="btn">Javascript</button>
+          <button class="btn">News</button>
+          <button class="btn">Live</button
+          ><button class="btn">Pakistani Dramas</button>
+          <button class="btn">Masala films</button>
+          <button class="btn">Animated Films</button>
+          <button class="btn">Cars</button
+          ><button class="btn">Recently uploaded</button>
+          <button class="btn">Watched</button>
+          <button class="btn">New to You</button>
+        </section>
+
+        <!-- btn header ends -->
+      </header>
+
+      <!-- header ends -->
+
+      <!-- body section starts -->
+
+      <section class="mt-28">
+        <section class="flex">
+          <!-- side menu div starts -->
+
+          <div
+            class="hidden sm:flex flex-col gap-6 justify-center items-center fixed left-0 top-8 w-18 bg-white h-full"
+          >
+            <div class="side_menu">
+              <img src="./images/home.svg" alt="home icon" class="size-7" />
+              <p class="text-sm">Home</p>
+            </div>
+
+            <div class="side_menu">
+              <img src="./images/shorts.svg" alt="shorts icon" class="size-7" />
+              <p class="text-sm">Shorts</p>
+            </div>
+
+            <div class="side_menu">
+              <img
+                src="./images/subscriptions.svg"
+                alt="subscriptions icon"
+                class="size-7"
+              />
+              <p class="text-[10px]">Subscription</p>
+            </div>
+
+            <div class="side_menu">
+              <img
+                src="./images/profile.svg"
+                alt="profile icon"
+                class="size-7"
+              />
+              <p class="text-sm">You</p>
+            </div>
+          </div>
+
+          <!-- side menu div ends -->
+
+          <!-- videos div starts -->
+
+          <div
+            class="w-full flex flex-wrap justify-center items-center gap-6 relative top-10"
+          >
+            <!-- video starts -->
+            <div class="video_img">
+              <img src="./images/img-1.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-2.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-3.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-4.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-5.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-6.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-7.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-8.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-9.avif" alt="" class="rounded-lg" />
+            </div>
+
+            <!-- video ends -->
+
+            <!-- shorts start -->
+
+            <div
+              class="flex flex-wrap justify-center items-center overflow-auto gap-6 mt-10 mb-10"
+            >
+              <div class="shorts">
+                <img
+                  src="./images/short-1.avif"
+                  alt=""
+                  class="rounded-lg w-[100%] h-[100%]"
+                />
+              </div>
+              <div class="shorts">
+                <img
+                  src="./images/short-2.avif"
+                  alt=""
+                  class="rounded-lg w-[100%] h-[100%]"
+                />
+              </div>
+              <div class="shorts">
+                <img
+                  src="./images/short-3.avif"
+                  alt=""
+                  class="rounded-lg w-[100%] h-[100%]"
+                />
+              </div>
+              <div class="shorts">
+                <img
+                  src="./images/short-4.avif"
+                  alt=""
+                  class="rounded-lg w-[100%] h-[100%]"
+                />
+              </div>
+              <div class="shorts">
+                <img
+                  src="./images/short-5.avif"
+                  alt=""
+                  class="rounded-lg w-[100%] h-[100%]"
+                />
+              </div>
+            </div>
+
+            <!-- shorts ends -->
+
+            <!-- video starts -->
+
+            <div class="video_img">
+              <img src="./images/img-1.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-2.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-3.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-4.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-5.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-6.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-7.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-8.avif" alt="" class="rounded-lg" />
+            </div>
+            <div class="video_img">
+              <img src="./images/img-9.avif" alt="" class="rounded-lg" />
+            </div>
+            <!-- video ends -->
+          </div>
+
+          <!-- videos div ends -->
+        </section>
+      </section>
+
+      <!-- body section ends -->
+
+      <!-- footer starts -->
+      <footer></footer>
+      <!-- footer ends -->
+    </main>
+    <!-- main div ends -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
