@@ -17,16 +17,30 @@
     <!-- main tag -->
     <main>
       <!-- header tag -->
-      <header class="h-4 border-0">
+      <header class="h-6 border-0">
         <div class="m-4">
-          <ul class="flex gap-5 text-sm absolute end-8">
-            <li class="hover:underline"><a href="#">Gmail</a></li>
-            <li class="hover:underline"><a href="#">Images</a></li>
-            <li>
-              <img src="./images/lab.svg" alt="lab image" />
+          <ul
+            class="flex gap-5 text-sm sm:absolute sm:end-8 sm:justify-end justify-between"
+          >
+            <li class="hover:underline hidden sm:block">
+              <a href="#">Gmail</a>
+            </li>
+            <li class="hover:underline hidden sm:block">
+              <a href="#">Images</a>
             </li>
             <li>
-              <img src="./images/apps.svg" alt="apps image" />
+              <img
+                src="./images/lab.svg"
+                alt="lab image"
+                class="start-0 sm:block"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/apps.svg"
+                alt="apps image"
+                class="hidden sm:block"
+              />
             </li>
             <li><img src="./images/account.svg" alt="account image" /></li>
           </ul>
@@ -55,7 +69,7 @@
           <img
             src="./images/search.svg"
             alt="search image"
-            class="absolute left-99 top-8"
+            class="relative left-10"
           />
           <input
             type="search"
@@ -65,12 +79,12 @@
           <img
             src="./images/mic.svg"
             alt="mic image"
-            class="absolute right-110 top-8"
+            class="relative right-20"
           />
           <img
             src="./images/camera.svg"
             alt="camera image"
-            class="absolute right-100 top-8"
+            class="relative right-17"
           />
         </div>
         <div class="gap-3 flex justify-center items-center m-2">
@@ -103,18 +117,22 @@
             <h1>Pakistan</h1>
           </div>
           <hr class="text-gray-300" />
-          <div class="p-3 pl-10 pr-10 flex justify-between">
-            <ul class="flex gap-10">
-              <li>About</li>
-              <li>Advertising</li>
-              <li>Business</li>
-              <li>How Search Works</li>
-            </ul>
-            <ul class="flex gap-10">
-              <li>Privacy</li>
-              <li>Terms</li>
-              <li>Settings</li>
-            </ul>
+          <div class="p-3 pl-10 pr-10 flex flex-wrap justify-between">
+            <div>
+              <ul class="flex flex-wrap gap-4 sm:gap-10 justify-evenly">
+                <li>About</li>
+                <li>Advertising</li>
+                <li>Business</li>
+                <li>How Search Works</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="flex gap-10 pt-2 sm:pt-0">
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Settings</li>
+              </ul>
+            </div>
           </div>
         </div>
       </footer>
