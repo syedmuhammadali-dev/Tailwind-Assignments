@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "youtube-clone/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "youtube-clone" }
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/youtube-clone/$1" }
+  ]
+}
