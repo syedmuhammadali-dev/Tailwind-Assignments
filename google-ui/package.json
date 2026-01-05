@@ -7,7 +7,7 @@
     "buildT": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "ali",
   "license": "ISC",
   "description": "",
   "dependencies": {

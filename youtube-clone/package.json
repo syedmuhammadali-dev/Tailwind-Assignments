@@ -6,10 +6,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css",
     "buildT": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
-    "build": "node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/input.css -o ./src/output.css --minify"
+    "build": "mkdir -p ../public && mkdir -p ../public/src && cp index.html ../public/ && cp -r images ../public/ && cp -r js ../public/ && node ./node_modules/@tailwindcss/cli/dist/index.mjs -i ./src/input.css -o ../public/src/output.css --minify"
   },
   "keywords": [],
-  "author": "",
+  "author": "ali",
   "license": "ISC",
   "description": "",
   "dependencies": {

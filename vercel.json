@@ -4,10 +4,7 @@
     {
       "src": "youtube-clone/package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "youtube-clone" }
+      "config": { "distDir": "public" }
     }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/youtube-clone/$1" }
   ]
 }
