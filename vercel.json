@@ -1,10 +1,5 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "youtube-clone/package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "public" }
-    }
-  ]
+  "buildCommand": "cd youtube-clone && bash build.sh",
+  "outputDirectory": "public"
 }
