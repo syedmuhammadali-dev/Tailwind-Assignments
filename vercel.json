@@ -1,5 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "cd youtube-clone && bash build.sh",
-  "outputDirectory": "public"
+  "buildCommand": "bash ./youtube-clone/build.sh",
+  "outputDirectory": "public",
+  "installCommand": "npm install --legacy-peer-deps"
 }
