@@ -30,7 +30,7 @@
   <body>
     <!-- main div starts -->
 
-    <main class="container max-w-480 mx-auto">
+    <main class="w-full mx-auto">
       <!-- header starts -->
 
       <header class="fixed top-0 left-0 w-full bg-white z-50 shadow">
@@ -131,7 +131,7 @@
         <!-- btn header starts -->
 
         <section
-          class="overflow-auto flex justify-center items-center gap-3 mb-5"
+          class="flex overflow-x-auto gap-3 mb-4 px-4 pb-2 w-full no-scrollbar"
         >
           <button class="btn">All</button>
           <button class="btn">Javascript</button>
@@ -153,12 +153,12 @@
 
       <!-- body section starts -->
 
-      <section class="mt-28">
+      <section class="mt-36">
         <section class="flex">
           <!-- side menu div starts -->
 
           <div
-            class="hidden sm:flex flex-col gap-6 justify-center items-center fixed left-0 top-8 w-18 bg-white h-full"
+            class="hidden sm:flex flex-col gap-6 pt-4 items-center fixed left-0 top-14 w-18 bg-white h-[calc(100vh-3.5rem)] z-40 overflow-y-auto"
           >
             <div class="side_menu">
               <img src="./images/home.svg" alt="home icon" class="size-7" />
@@ -194,7 +194,7 @@
           <!-- videos div starts -->
 
           <div
-            class="w-full flex flex-wrap justify-center items-center gap-6 relative top-10"
+            class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 gap-y-8 px-4 sm:ml-20 pb-10"
           >
             <!-- video starts -->
             <div class="video_img">
@@ -228,44 +228,28 @@
             <!-- video ends -->
 
             <!-- shorts start -->
-
-            <div
-              class="flex flex-wrap justify-center items-center overflow-auto gap-6 mt-10 mb-10"
-            >
-              <div class="shorts">
-                <img
-                  src="./images/short-1.avif"
-                  alt=""
-                  class="rounded-lg w-[100%] h-[100%]"
-                />
-              </div>
-              <div class="shorts">
-                <img
-                  src="./images/short-2.avif"
-                  alt=""
-                  class="rounded-lg w-[100%] h-[100%]"
-                />
-              </div>
-              <div class="shorts">
-                <img
-                  src="./images/short-3.avif"
-                  alt=""
-                  class="rounded-lg w-[100%] h-[100%]"
-                />
-              </div>
-              <div class="shorts">
-                <img
-                  src="./images/short-4.avif"
-                  alt=""
-                  class="rounded-lg w-[100%] h-[100%]"
-                />
-              </div>
-              <div class="shorts">
-                <img
-                  src="./images/short-5.avif"
-                  alt=""
-                  class="rounded-lg w-[100%] h-[100%]"
-                />
+            <div class="col-span-full">
+              <h3 class="font-bold text-xl mb-4 flex items-center gap-2">
+                <img src="./images/shorts.svg" class="w-6 h-6" alt="" /> Shorts
+              </h3>
+              <div
+                class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4"
+              >
+                <div class="shorts">
+                  <img src="./images/short-1.avif" alt="" class="rounded-lg" />
+                </div>
+                <div class="shorts">
+                  <img src="./images/short-2.avif" alt="" class="rounded-lg" />
+                </div>
+                <div class="shorts">
+                  <img src="./images/short-3.avif" alt="" class="rounded-lg" />
+                </div>
+                <div class="shorts">
+                  <img src="./images/short-4.avif" alt="" class="rounded-lg" />
+                </div>
+                <div class="shorts">
+                  <img src="./images/short-5.avif" alt="" class="rounded-lg" />
+                </div>
               </div>
             </div>
 
